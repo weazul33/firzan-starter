@@ -1,0 +1,67 @@
+{
+  "outputStyle": "Coach",
+  "permissions": {
+    "defaultMode": "default",
+    "deny": [
+      "Edit(/.claude/**)",
+      "Bash(rm *)",
+      "Bash(rmdir *)",
+      "Bash(sudo *)",
+      "Bash(curl *)",
+      "Bash(wget *)",
+      "Bash(npm *)",
+      "Bash(npx *)",
+      "Bash(yarn *)",
+      "Bash(pnpm *)",
+      "Bash(pip *)",
+      "Bash(pip3 *)",
+      "Bash(brew *)",
+      "Bash(git rm *)",
+      "Bash(git clean *)",
+      "Bash(git push --force*)",
+      "Bash(git push -f*)",
+      "Bash(git push * --force*)",
+      "Bash(git push * -f*)",
+      "Bash(git reset --hard*)",
+      "Bash(git push origin main*)",
+      "Bash(git push * main*)",
+      "Bash(git push *:main*)",
+      "PowerShell(Remove-Item *)",
+      "PowerShell(Invoke-WebRequest *)",
+      "PowerShell(Invoke-RestMethod *)",
+      "PowerShell(curl *)",
+      "PowerShell(wget *)",
+      "PowerShell(npm *)",
+      "PowerShell(npx *)",
+      "PowerShell(yarn *)",
+      "PowerShell(pnpm *)",
+      "PowerShell(pip *)",
+      "PowerShell(pip3 *)",
+      "PowerShell(winget *)",
+      "PowerShell(choco *)",
+      "PowerShell(sudo *)",
+      "PowerShell(git rm *)",
+      "PowerShell(git clean *)",
+      "PowerShell(git push --force*)",
+      "PowerShell(git push -f*)",
+      "PowerShell(git push * --force*)",
+      "PowerShell(git push * -f*)",
+      "PowerShell(git reset --hard*)",
+      "PowerShell(git push origin main*)",
+      "PowerShell(git push * main*)",
+      "PowerShell(git push *:main*)"
+    ]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "You are checking one reply from a coach helping a beginner build a small web page. Read last_assistant_message in the input. If stop_hook_active is true, return {\"ok\": true}. Only changes to the website itself count: files in the docs folder. Changes only to notes, the scorecard, reviews, the brief or saved versions don't count. If the reply says files in the docs folder were created or changed in this turn, it must tell the learner in plain words exactly how to check the change themselves: what to open, what to click and what they should see. If that is missing, return {\"ok\": false, \"reason\": \"Add a short 'Check it yourself' line with exact clicks. At coaching level full, also suggest typing /save once it works.\"}. In every other case return {\"ok\": true}."
+          }
+        ]
+      }
+    ]
+  }
+}

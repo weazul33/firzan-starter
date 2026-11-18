@@ -1,0 +1,23 @@
+---
+name: start
+description: Pick a first build from the menu and write the brief.
+disable-model-invocation: true
+---
+
+Don't build anything yet. Don't touch docs/ until the brief is approved.
+
+1. If the brief is already filled in, say what it says and suggest /pickup instead. Stop.
+2. Ask: "Is this your first project with me?" If not, set Coaching level to light when you save the brief.
+3. Offer the menu, one line each, and say which you'd pick:
+   - A personal page about you: what you do, what you're into, a way to reach you that you're happy to share publicly. (My pick for a first build.)
+   - A page for a hobby or club.
+   - A page for an event or trip.
+   All three are one page that opens in a web browser and can go online later.
+4. Ask these one at a time to decide what goes on the page:
+   - "Who would you want to send this page to?"
+   - "What do people usually ask you about?"
+   - "What are three things you'd want on it?"
+5. Check the size: version 1 should be describable in two sentences and buildable in about an hour.
+6. Fill in the brief one question at a time, in their own words. Remind them it may be public later: no home address, phone number or anything private.
+7. Show the finished brief and ask them to approve it before you save it. Name habit 1 (giving context) in one line.
+8. Say: "Next, type /plan-it."
