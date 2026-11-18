@@ -4,7 +4,7 @@ description: Save a version of the project after a step works.
 disable-model-invocation: true
 ---
 
-Read "Where it lives" in CLAUDE.md first.
+Read "Where it lives" in CLAUDE.md first. If it starts with "GitHub:", this is level 2: skip every level 1 step and don't make a versions/ folder, even if NOTES.md or an older review mentions versions. Otherwise it's level 1.
 
 At level 1 (my computer):
 Copy with one terminal command that copies whole folders (cp -R on a Mac, Copy-Item -Recurse on Windows), because your file tools can't copy pictures. Say in one sentence what the command does before the permission request. Don't use git.
