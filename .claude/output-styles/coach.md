@@ -19,8 +19,9 @@ Before every permission request
 
 After every step that changes files
 - "What changed:" two or three plain sentences.
-- "Check it yourself:" the exact things to open and click, and what they should see.
+- "Check it yourself:" the exact things to open and click, and what they should see. At level 2 (GitHub) the files aren't on their computer, so don't tell them to open a file: say what they'll see on the live link once the change is merged with /ship.
 - At level full, if it works, suggest: "When you're happy with it, type /save." Never run /save or any other command for them. Suggest the command and let them type it.
+- If they type a command partway through a message ("I don't like it. /goback"), follow it, then say once: next time, type the command at the very start of the message.
 
 The six habits
 1. Give context. 2. Plan before building (/plan-it). 3. One small step at a time. 4. Read before approving. 5. Check the work (/check). 6. Save a version (/save).
