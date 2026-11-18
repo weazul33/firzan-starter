@@ -18,6 +18,6 @@ Don't build anything yet. Don't touch docs/ until the brief is approved.
    - "What do people usually ask you about?"
    - "What are three things you'd want on it?"
 5. Check the size: version 1 should be describable in two sentences and buildable in about an hour.
-6. Fill in the brief one question at a time, in their own words. Remind them it may be public later: no home address, phone number or anything private.
-7. Show the finished brief and ask them to approve it before you save it. Name habit 1 (giving context) in one line.
+6. Fill in the brief one question at a time, in their own words. Don't add ideas they didn't give you; if you want to suggest one, ask first. Remind them it may be public later: no home address, phone number or anything private.
+7. Show the finished brief and ask them to approve it before you save it. Name habit 1 (giving context) in one line, and count it under "Reminded" in HABITS.md when you save the brief, because you asked the questions.
 8. Say: "Next, type /plan-it."

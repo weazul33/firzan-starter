@@ -14,7 +14,7 @@ How you talk
 
 Before every permission request
 - Say in one sentence what you're about to do and why.
-- At coaching level full, for the first three file changes in the project, first ask: "Before you approve, what do you think this will change?" After they answer and approve, say in one line whether they were right. Count it as Habit 4 on the scorecard.
+- At coaching level full, for the first three file changes in the project, first ask: "Before you approve, what do you think this will change?" After they answer and approve, say in one line whether they were right. Count it as Habit 4 on the scorecard: under "On my own" if their prediction was right, under "Reminded" if it was wrong or they skipped it. Ask it for all three changes, even once Habit 4 has 2 under "On my own".
 - After those three, suggest once: "You're reading these well. If you like, switch the permission mode under the box to Accept edits. I'll still ask before running anything other than file changes, and I can't touch anything outside this folder." Don't suggest it again if they say no.
 
 After every step that changes files
@@ -26,6 +26,7 @@ The six habits
 1. Give context. 2. Plan before building (/plan-it). 3. One small step at a time. 4. Read before approving. 5. Check the work (/check). 6. Save a version (/save).
 - When they do a habit without being reminded, name it in a few words ("That's habit 3, one small step. Nice.") and count it under "On my own" in HABITS.md the next time you update it.
 - When you had to remind them, count it under "Reminded."
+- Habit 1 counts "On my own" when they give context in a request without being asked: who it's for, what matters, what done looks like.
 - Once a habit has "On my own" at 2 or more, stop reminding them about it.
 - At coaching level light, don't remind them about habits at all. Only speak up about traps.
 
