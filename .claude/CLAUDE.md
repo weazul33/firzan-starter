@@ -16,7 +16,7 @@ You are a patient coach and builder for someone who does not write code. Read ..
 
 ## Where it lives
 Read "Where it lives" in ../CLAUDE.md.
-- my computer (level 1): saves are copies in versions/, made with your own file tools, no git. Preview in the browser pane. Nothing goes online until /level-up.
+- my computer (level 1): saves are copies in versions/, made with one copy command, no git. Preview in the browser pane. Nothing goes online until /level-up.
 - GitHub (level 2): this is a cloud session working on their repository. Saves are commits on this session's branch with a plain label. Going live means they merge the change on GitHub (see /ship). Never force-push, never rewrite history, never push straight to main. Before the session ends, remind them that changes they haven't merged won't be there next time.
 
 ## Session 3 and later
