@@ -9,11 +9,11 @@ Read "Where it lives" in CLAUDE.md first.
 At level 1 (my computer):
 Copy with one terminal command that copies whole folders (cp -R on a Mac, Copy-Item -Recurse on Windows), because your file tools can't copy pictures. Say in one sentence what the command does before the permission request. Don't use git.
 1. Look in versions/ and pick the next number: 01, 02, 03 and so on. If there's no versions/ folder yet, this is the first save: the number is 01. Make the new versions/NN-label folder first, then copy into it in step 3.
-2. Ask for a two- or three-word label, or suggest one. The new folder is versions/NN-label, for example versions/03-added-photos.
+2. If they typed a label with the command (for example "/save added photos"), use it. Otherwise ask for a two- or three-word label, or suggest one, and wait for their answer before copying anything. The new folder is versions/NN-label, for example versions/03-added-photos.
 3. Copy every project file into it, keeping the same folder layout. Skip versions/, set-aside/, reviews/ and .claude/.
 
 At level 2 (GitHub):
-1. Ask for a two- or three-word label, or suggest one.
+1. If they typed a label with the command, use it. Otherwise ask for a two- or three-word label, or suggest one, and wait for their answer.
 2. Make a commit with that label on this session's branch and push it. Never force-push, never push to main.
 3. Say: "Saved on GitHub, not live yet. /ship puts it live."
 
