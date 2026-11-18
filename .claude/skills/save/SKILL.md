@@ -8,7 +8,7 @@ Read "Where it lives" in CLAUDE.md first.
 
 At level 1 (my computer):
 Use your own file tools to read and write the files, not terminal commands, so this works the same on every computer. Don't use git.
-1. Look in versions/ and pick the next number: 01, 02, 03 and so on. If there's no versions/ folder yet, this is the first save: the number is 01, and the folder gets made when you copy the files in step 3.
+1. Look in versions/ and pick the next number: 01, 02, 03 and so on. If there's no versions/ folder yet, this is the first save: the number is 01. Make the new versions/NN-label folder first, then copy into it in step 3.
 2. Ask for a two- or three-word label, or suggest one. The new folder is versions/NN-label, for example versions/03-added-photos.
 3. Copy every project file into it, keeping the same folder layout. Skip versions/, set-aside/, reviews/ and .claude/.
 
