@@ -10,9 +10,10 @@ disable-model-invocation: true
    - "If the next thing you build breaks everything, what would you do?"
    - "Why do we make a plan before building?"
    - "What's one idea you parked under 'Not in version 1'?"
+   For the first question, accept any answer that means going back to the last save. Then add one line so it works outside this kit: in any Claude Code project, ask Claude to go back to your last saved version, or use /rewind to undo recent changes.
 4. Write the build review to reviews/session-NN.md using the format below. If there's no reviews/ folder yet, this is the first review: writing the file makes the folder. Tag 5 to 10 moves, in the order they happened. Every ?!, ? and ?? gets a "Better:" line. Use only moves that actually happened this session.
 5. Show them the review in plain words: the best move, the one to work on, and the counts.
-6. Tell them how to pick up next time: /pickup.
+6. Tell them how to pick up next time: /pickup. At level 1, add one line: your page only lives on this computer, so nobody else can see it yet. Session 2 (/level-up) puts it online.
 7. At level 2: if there are saved changes that aren't merged, remind them once (/ship).
 
 Tags:
