@@ -26,6 +26,13 @@
       "Bash(git push origin main*)",
       "Bash(git push * main*)",
       "Bash(git push *:main*)",
+      "Bash(git push *--mirror*)",
+      "Bash(git push *--all*)",
+      "Bash(git push *--delete*)",
+      "Bash(git push * -d *)",
+      "Bash(git push -d *)",
+      "Bash(git push *refs/heads/main*)",
+      "Bash(git push * +*)",
       "PowerShell(Remove-Item *)",
       "PowerShell(Invoke-WebRequest *)",
       "PowerShell(Invoke-RestMethod *)",
@@ -49,7 +56,14 @@
       "PowerShell(git reset --hard*)",
       "PowerShell(git push origin main*)",
       "PowerShell(git push * main*)",
-      "PowerShell(git push *:main*)"
+      "PowerShell(git push *:main*)",
+      "PowerShell(git push *--mirror*)",
+      "PowerShell(git push *--all*)",
+      "PowerShell(git push *--delete*)",
+      "PowerShell(git push * -d *)",
+      "PowerShell(git push -d *)",
+      "PowerShell(git push *refs/heads/main*)",
+      "PowerShell(git push * +*)"
     ]
   },
   "hooks": {
@@ -58,7 +72,7 @@
         "hooks": [
           {
             "type": "prompt",
-            "prompt": "You are checking one reply from a coach helping a beginner build a small web page. Read last_assistant_message in the input. If stop_hook_active is true, return {\"ok\": true}. Only changes to the website itself count: files in the docs folder. Changes only to notes, the scorecard, reviews, the brief or saved versions don't count. If the reply says files in the docs folder were created or changed in this turn, it must tell the learner in plain words exactly how to check the change themselves: what to open, what to click and what they should see. If that is missing, return {\"ok\": false, \"reason\": \"Add a short 'Check it yourself' line with exact clicks. At coaching level full, also suggest typing /save once it works.\"}. In every other case return {\"ok\": true}."
+            "prompt": "Decide one thing about a coach's reply to a beginner building a small web page. The input is JSON with last_assistant_message and stop_hook_active. If stop_hook_active is true, allow. Otherwise block only if both of these are true: (a) the reply says it created or changed a file in the docs folder during this turn, and (b) the reply has no 'Check it yourself' line telling the learner what to open and what they should see. Changes only to notes, the scorecard, reviews, the brief, saved versions or the .claude folder never count. In every other case, allow. When you allow, answer with ok set to true. When you block, answer with ok set to false and this reason: Add a short 'Check it yourself' line with exact clicks."
           }
         ]
       }

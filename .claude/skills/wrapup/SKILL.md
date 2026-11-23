@@ -4,23 +4,27 @@ description: End the session: notes, scorecard, recall questions, build review.
 disable-model-invocation: true
 ---
 
-1. Update "Current status" and add 1 to "Session number" in CLAUDE.md. Add a NOTES line for today.
-2. Add this session's line under "By session" in HABITS.md, in the format shown there.
+Before step 1, at level 2 only: get the latest from GitHub first (git fetch origin), then compare this branch with origin/main, not a local copy of main, which can be out of date. If docs/ has changes that aren't saved, or saved page changes that aren't merged yet, stop here. Suggest /save and /ship for them first, then come back to /wrapup. That way the merge is counted before the review, and the wrap-up pull request has only notes. If they don't want them live, carry on, and say plainly: unsaved changes will be gone next time, and saved ones will be in the wrap-up pull request too.
+
+1. At both levels: note the "Session number" in CLAUDE.md: that's this session's number. Use it below for the HABITS line, the review and the wrap-up label (session 1 is S1 and reviews/session-01.md). Update "Current status" in CLAUDE.md and add a line for today under "Log" in NOTES.md. Add any words you explained today that aren't in "Words I've learned" yet.
+2. Add this session's line under "By session" in HABITS.md, in the format shown there. Include any "counts so far" line under "Today" that starts with this session's number.
 3. Ask three quick questions, one at a time, and give friendly feedback on each answer:
    - "If the next thing you build breaks everything, what would you do?"
    - "Why do we make a plan before building?"
    - "What's one idea you parked under 'Not in version 1'?"
-4. Write the build review to reviews/session-NN.md using the format below. If there's no reviews/ folder yet, this is the first review: writing the file makes the folder. Tag 5 to 10 moves, in the order they happened. Every ?!, ? and ?? gets a "Better:" line. Use only moves that actually happened this session.
+   For the first question, accept any answer that means going back to the last save. Then add one line so it works outside this kit: in any Claude Code project, ask Claude to go back to your last saved version, or use /rewind to undo recent changes.
+4. Write the build review to reviews/session-NN.md using the format below. If there's no reviews/ folder yet, this is the first review: writing the file makes the folder. Tag 5 to 10 moves, in the order they happened. Every ?!, ? and ?? gets a "Better:" line. Use your moves log and the notes under "Today" in NOTES.md that start with this session's number. Use only moves that actually happened this session. At level 2, tag the merge from what they told you at /ship, not a guess. After the review is written, clear those notes from "Today", keeping the heading and its line in brackets.
 5. Show them the review in plain words: the best move, the one to work on, and the counts.
-6. Tell them how to pick up next time: /pickup.
-7. At level 2: if there are saved changes that aren't merged, remind them once (/ship).
+6. Now add 1 to "Session number" in CLAUDE.md, ready for next time. Keep using this session's number for the rest of this command.
+7. Tell them how to pick up next time: /pickup. At level 1, add one line: your page only lives on this computer, so nobody else can see it yet. Session 2 (/level-up) puts it online.
+8. At level 2: what you just wrote (the brief, NOTES.md, HABITS.md and the review) is a change too, and right now it is only on this session's branch. Commit only CLAUDE.md, NOTES.md, HABITS.md and reviews/, not docs/. Commit them on this branch with the label "session NN wrap-up" and push, the same way /save does at level 2, but with no new log line: this doesn't count for habit 6. Then say: "Your notes and review only reach next time once they're merged. Type /ship once more. It makes a new pull request with just your notes and review, and it won't change your page." If they kept saved page changes back in step 1, say this pull request has those too, so it will change the page.
 
 Tags:
 !! Brilliant: a habit done on their own at the moment it mattered most.
 ! Great: a great prompt (one step, clear, says what done looks like) or a save on their own.
 ✓ Good: the right habit, after a reminder.
 ?! Inaccuracy: a vague ask, or approving without reading.
-? Mistake: a missed plan, or several working changes with no save.
+? Mistake: a missed plan, or two working changes piling up with no save.
 ?? Blunder: building on top of something unchecked, merging without reading the change, putting something private in a file.
 
 Format:

@@ -10,4 +10,4 @@
 (Short notes the coach keeps for the build review in long sessions.)
 
 ## Words I've learned
-(The coach adds a word here, with a one-line meaning, the first time it explains it.)
+(The coach adds the words it has explained, with a one-line meaning each, the next time it changes these notes.)
