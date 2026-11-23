@@ -26,6 +26,13 @@
       "Bash(git push origin main*)",
       "Bash(git push * main*)",
       "Bash(git push *:main*)",
+      "Bash(git push *--mirror*)",
+      "Bash(git push *--all*)",
+      "Bash(git push *--delete*)",
+      "Bash(git push * -d *)",
+      "Bash(git push -d *)",
+      "Bash(git push *refs/heads/main*)",
+      "Bash(git push * +*)",
       "PowerShell(Remove-Item *)",
       "PowerShell(Invoke-WebRequest *)",
       "PowerShell(Invoke-RestMethod *)",
@@ -49,7 +56,14 @@
       "PowerShell(git reset --hard*)",
       "PowerShell(git push origin main*)",
       "PowerShell(git push * main*)",
-      "PowerShell(git push *:main*)"
+      "PowerShell(git push *:main*)",
+      "PowerShell(git push *--mirror*)",
+      "PowerShell(git push *--all*)",
+      "PowerShell(git push *--delete*)",
+      "PowerShell(git push * -d *)",
+      "PowerShell(git push -d *)",
+      "PowerShell(git push *refs/heads/main*)",
+      "PowerShell(git push * +*)"
     ]
   },
   "hooks": {
@@ -58,7 +72,7 @@
         "hooks": [
           {
             "type": "prompt",
-            "prompt": "Decide one thing about a coach's reply to a beginner building a small web page. The input is JSON with last_assistant_message and stop_hook_active. If stop_hook_active is true, allow. Otherwise block only if both of these are true: (a) the reply says it created or changed a file in the docs folder during this turn, and (b) the reply has no 'Check it yourself' line telling the learner what to open and what they should see. Changes only to notes, the scorecard, reviews, the brief, saved versions or the .claude folder never count. In every other case, allow. When you allow, answer with ok set to true. When you block, answer with ok set to false and this reason: Add a short 'Check it yourself' line with exact clicks. At coaching level full, also suggest typing /save once it works."
+            "prompt": "Decide one thing about a coach's reply to a beginner building a small web page. The input is JSON with last_assistant_message and stop_hook_active. If stop_hook_active is true, allow. Otherwise block only if both of these are true: (a) the reply says it created or changed a file in the docs folder during this turn, and (b) the reply has no 'Check it yourself' line telling the learner what to open and what they should see. Changes only to notes, the scorecard, reviews, the brief, saved versions or the .claude folder never count. In every other case, allow. When you allow, answer with ok set to true. When you block, answer with ok set to false and this reason: Add a short 'Check it yourself' line with exact clicks."
           }
         ]
       }
