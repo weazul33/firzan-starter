@@ -7,10 +7,10 @@ disable-model-invocation: true
 Read "Where it lives" in CLAUDE.md first. If it starts with "GitHub:", this is level 2: skip every level 1 step and don't make a versions/ folder, even if NOTES.md or an older review mentions versions. Otherwise it's level 1.
 
 At level 1 (my computer):
-Copy with one terminal command that copies whole folders (cp -R on a Mac, Copy-Item -Recurse on Windows), because your file tools can't copy pictures. Say in one sentence what the command does before the permission request. Don't use git.
+Copy with one terminal command that copies whole folders (cp -R on a Mac, Copy-Item -Recurse on Windows), because your file tools can't copy pictures. Don't use git.
 1. Look in versions/ and pick the next number: 01, 02, 03 and so on. If there's no versions/ folder yet, this is the first save: the number is 01. Don't make any folder yet.
 2. If they typed a label with the command (for example "/save added photos"), use it. Otherwise ask for a two- or three-word label, or suggest one, and wait for their answer before copying anything. The new folder is versions/NN-label, for example versions/03-added-photos.
-3. Once the label is agreed, make versions/NN-label and copy every project file into it, keeping the same folder layout, in one command line (for example mkdir and cp -R joined with &&, or New-Item and Copy-Item -Recurse on Windows). That's one permission box. Skip versions/, set-aside/, reviews/ and .claude/.
+3. Once the label is agreed, make versions/NN-label and copy every project file into it, keeping the same folder layout, in one command line (for example mkdir and cp -R joined with &&, or New-Item and Copy-Item -Recurse on Windows). Skip versions/, set-aside/, reviews/ and .claude/. Before you run it, say in one short message what's coming: one terminal command (the first time, say it's an instruction typed straight to the computer) that copies the project into versions/NN-label, then a log line in NOTES.md and a count in HABITS.md (steps 4 and 5). Count boxes by the box rule in the Coach style.
 
 At level 2 (GitHub):
 1. If they typed a label with the command, use it. Otherwise ask for a two- or three-word label, or suggest one, and wait for their answer.
@@ -19,5 +19,5 @@ At level 2 (GitHub):
 
 At both levels:
 4. Add one line to the log in NOTES.md: the label and what works now.
-5. Update HABITS.md: count habit 6 under "On my own" if they typed /save without you suggesting it in your last reply, otherwise under "Reminded."
+5. Update HABITS.md: count habit 6 under "On my own" if they typed /save without you suggesting it or mentioning the no-save trap in your last reply, otherwise under "Reminded."
 6. Tell them in one line what was saved and that /goback can bring it back any time.

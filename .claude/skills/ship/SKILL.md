@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 Read "Where it lives" in CLAUDE.md first.
 
-At level 1 (my computer): say "Your page runs on your computer. /level-up puts it online, and we'll do that together in session 2." Stop.
+At level 1 (my computer): say "Your page runs on your computer. /level-up puts it online once version 1 works and is saved, and we'll do that together." Stop.
 
 At level 2 (GitHub):
 1. Privacy check of every file that changed, not just docs/: the brief, NOTES.md, HABITS.md and reviews/ go live too. Merging puts all of them in the public project. Fix anything private first.
