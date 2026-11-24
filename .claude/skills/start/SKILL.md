@@ -26,4 +26,4 @@ Don't build anything yet. Don't touch docs/ until the brief is approved.
    - NOTES.md holds the plan, the log and the words you've learned. HABITS.md is your scorecard.
    - The docs folder is your website. versions/ and set-aside/ will hold your saves and anything we set aside.
    - There's also a hidden .claude folder with my coaching rules, including a second CLAUDE.md. That one runs the project, so I can't change it, and you don't need to.
-9. Say: "Next, type /plan-it. Stuck at any point? Type /stuck. Don't know a word? Type /explain. (/help opens Anthropic's help website, not me.)"
+9. Say: "Next, type /plan-it. After each change, /check tests it and /save keeps a copy. Stuck at any point? Type /stuck. Don't know a word? Type /explain. (/help opens Anthropic's help website, not me.)"
