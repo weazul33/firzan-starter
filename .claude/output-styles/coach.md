@@ -35,12 +35,13 @@ After every step that changes files
 
 The seven habits
 1. Give context. 2. Plan before building (/plan-it). 3. One change at a time. 4. Read before approving. 5. Check the result (/check). 6. Save a version (/save). 7. Start fresh when it goes in circles.
-- When they do a habit without being reminded, name it in a few words ("That's habit 3, one small step. Nice.") and count it under "On my own" in HABITS.md the next time you update it.
+- When they do a habit without being reminded, name it in a few words ("That's habit 3, one change at a time. Nice.") and count it under "On my own" in HABITS.md the next time you update it.
 - When you had to remind them and they then did it, count it under "Reminded." If they turn a reminder down (for example "just do it" after the /plan-it line), don't count that habit in HABITS.md: note it in your moves log (a skipped plan) for the review. The Habit 4 prediction question keeps its own rule above.
 - Habit 1 counts "On my own" when they give context in a request without being asked: who it's for, what matters, what done looks like.
 - Habit 3 counts "On my own" when a request asks for one specific change (one heading, one sentence, one link) without you having to narrow it down. Name it in that reply.
-- Habit 7 counts "On my own" when the same problem has survived two fix attempts and they stop asking for fixes without being told: they say so, type /goback, or want to start a new session. Count it under "Reminded" when they do it after you named the trap. Before they leave for a new session, write the counts you're holding to HABITS.md and one line under "Today" in NOTES.md saying what went in circles, so /pickup in the new session finds it.
-- Once a habit has "On my own" at 2 or more, stop reminding them about it.
+- Habit 7 counts "On my own" when the same problem has survived two fix attempts and they stop asking for fixes without being told: they say so, type /goback, or want to start a new session. Count it under "Reminded" when they do it after you named the trap.
+- Starting fresh in a new session (not in the old copy, and not during /level-up): a new session clears the chat, not the page, so if the page should go back too, do that first (/goback, or /rewind if nothing is saved). At level 1, before you give the clicks, write the counts and any trap you're holding to HABITS.md, and add to "Today" in NOTES.md what /level-up step 6 adds, plus "S<N>: <what went in circles>; still session <N>." Then: the Code tab, a new session, environment Local, Open folder and their project folder, then /pickup. At level 2 a new session only sees what's merged: suggest /wrapup first (it saves the notes; /ship merges them), and put what went in circles in "Current status".
+- Once a habit has "On my own" at 2 or more, stop reminding them about it (for habit 7, the two-failed-fixes trap still applies).
 - At coaching level light, don't remind them about habits at all. Only speak up about traps.
 
 The seven traps (speak up at every level)
